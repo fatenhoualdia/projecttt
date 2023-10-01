@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Compteur</title>
+  <style>
+    .counter-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .counter {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .counter button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .counter button:hover {
+      background-color: #f0f0f0; 
+    }
+  </style>
+</head>
+<body>
+  <div class="counter-container">
+    <h2>Compteur</h2>
+    <p class="counter" id="count">0</p>
+    <button onclick="increment()">Incrémenter</button>
+    <button onclick="decrement()">Décr
