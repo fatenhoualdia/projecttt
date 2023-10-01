@@ -30,4 +30,23 @@
     <h2>Compteur</h2>
     <p class="counter" id="count">0</p>
     <button onclick="increment()">Incrémenter</button>
-    <button onclick="decrement()">Décr
+    <button onclick="decrement()">Décrémenter</button>
+  </div>
+
+  <script>
+    let countValue = 0;
+
+    function increment() {
+      countValue++;
+      document.getElementById('count').innerText = countValue;
+    }
+
+    function decrement() {
+      if (countValue > 0) {
+        countValue--;
+        document.getElementById('count').innerText = countValue;
+      }
+    }
+  </script>
+</body>
+</html>
